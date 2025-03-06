@@ -38,4 +38,4 @@ The game’s smooth animations and physics are driven by several mathematical pr
 - **Animation Calculations:**  
   The use of `requestAnimationFrame` combined with periodic mathematical updates (e.g., sine functions for star twinkling) creates smooth and responsive animations.
 
-     It's my first project so I hope you guys will be happy with my first project
+     It's my first project so I hope you guys will be happy with my first project# NoWingBird
