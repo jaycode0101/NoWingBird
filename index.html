@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galaxy Nowingbird</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+    <div id="score-display">0</div>
+    <div id="best-score">Best: 0</div>
+    <button id="mute-button">🔊</button>
+    
+    <div id="start-screen">
+      <h1>Galaxy Nowingbird</h1>
+      <p>Click or press Space to flap wings and navigate through obstacles</p>
+      <button id="start-button">Start Game</button>
+      <button id="open-settings-button">Settings</button>
+    </div>
+    
+    <div id="game-over-screen" style="display: none;">
+      <h1>Game Over</h1>
+      <p id="final-score">Your score: 0</p>
+      <div class="buttons-container">
+        <button id="restart-button">Play Again</button>
+        <button id="game-over-settings-button">Settings</button>
+        <button id="fullscreen-button">⛶</button>
+      </div>
+    </div>
+    
+    <div id="settings-screen" style="display: none;">
+      <h1>Game Settings</h1>
+      <div class="settings-group">
+        <label>
+          <input type="checkbox" id="background-music-toggle" checked>
+          Background Music
+        </label>
+      </div>
+      <div class="settings-group">
+        <label for="game-speed">Game Speed: <span id="game-speed-value" class="slider-value">1.0</span>x</label>
+        <div class="slider-container">
+          <input type="range" id="game-speed" min="0.5" max="2" step="0.1" value="1.0">
+        </div>
+      </div>
+      <div class="settings-group">
+        <label for="gravity">Gravity: <span id="gravity-value" class="slider-value">0.6</span></label>
+        <div class="slider-container">
+          <input type="range" id="gravity" min="0.3" max="1.0" step="0.05" value="0.6">
+        </div>
+      </div>
+      <div class="settings-group">
+        <label for="pipe-speed">Pipe Speed: <span id="pipe-speed-value" class="slider-value">1.0</span>x</label>
+        <div class="slider-container">
+          <input type="range" id="pipe-speed" min="0.5" max="2" step="0.1" value="1.0">
+        </div>
+      </div>
+      <div class="settings-group">
+        <label for="pipe-frequency">Pipe Frequency: <span id="pipe-frequency-value" class="slider-value">200</span></label>
+        <div class="slider-container">
+          <input type="range" id="pipe-frequency" min="100" max="300" step="10" value="200">
+        </div>
+      </div>
+      <div class="settings-group">
+        <label for="gap-size">Gap Size: <span id="gap-size-value" class="slider-value">180</span></label>
+        <div class="slider-container">
+          <input type="range" id="gap-size" min="150" max="250" step="10" value="180">
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button id="apply-settings">Apply & Close</button>
+        <button id="reset-settings">Reset Defaults</button>
+      </div>
+    </div>
+  </div>
+  <audio id="buttonClickSound" src="assets/sounds/bubble-pop-2-293341.mp3" preload="auto"></audio>
+  <audio id="backgroundMusic" src="assets/sounds/the-return-of-the-8-bit-era-301292.mp3" preload="auto" loop></audio>
+  <audio id="collisionSound" src="assets/sounds/mixkit-cartoon-dazzle-hit-and-birds-746.wav" preload="auto"></audio>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
