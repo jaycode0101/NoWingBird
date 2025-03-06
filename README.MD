@@ -39,3 +39,22 @@ The game’s smooth animations and physics are driven by several mathematical pr
   The use of `requestAnimationFrame` combined with periodic mathematical updates (e.g., sine functions for star twinkling) creates smooth and responsive animations.
 
      It's my first project so I hope you guys will be happy with my first project# NoWingBird
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or bug fixes, please open an issue or submit a pull request. When contributing, please follow these guidelines:
+- Write clear and concise commit messages.
+- Ensure your code is well-commented and follows the existing style.
+- Test your changes thoroughly before submitting.
+
+Your input helps make Galaxy Nowingbird even better!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
+
+## Acknowledgments
+
+- **Inspiration:**  
+  Galaxy Nowingbird is inspired by classic arcade games with a modern, cosmic twist.
+- **Assets:**  
+  Special thanks to the creators of the audio and visual assets that have contributed to the look and feel of this project.
