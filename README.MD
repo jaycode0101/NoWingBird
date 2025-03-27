@@ -1,3 +1,5 @@
+Game excess:https://jaycode0101.github.io/NoWingBird/
+
 # Galaxy Nowingbird
 
 Galaxy Nowingbird is a browser-based game that gives a cosmic twist to classic arcade-style gameplay. Guide your futuristic bird through a dynamic, obstacle-filled galaxy while enjoying smooth physics, vibrant visuals, and responsive audio controls.
